@@ -17,7 +17,7 @@ h2 {
   cursor: pointer;
 }
 .hr1 {
-  margin-bottom: 0;
+  margin: 0;
 }
 .categories {
   display: flex;
@@ -223,6 +223,7 @@ input:focus {
 }
 .images:hover {
   transform: scale(1.1);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .sdjhk {
   margin-bottom: 30px;
