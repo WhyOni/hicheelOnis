@@ -90,6 +90,7 @@ button {
   position: absolute;
   transition: cubic-bezier(0.165, 0.84, 0.44, 1) 1s;
   opacity: 0;
+  color: rgb(0, 110, 255);
 }
 .sell:hover > .fa-gift {
   transform: translate(10px, -20px) rotate(45deg);
