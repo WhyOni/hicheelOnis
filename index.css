@@ -35,6 +35,7 @@ h2 {
 }
 .categories > div:hover {
   background-color: rgb(199, 199, 199);
+  cursor: pointer;
 }
 .hr2 {
   margin-top: 0;
@@ -44,6 +45,7 @@ button {
   height: 30px;
   border-radius: 50px;
   border: 1px solid;
+  cursor: pointer;
 }
 .login {
   background-color: black;
@@ -66,7 +68,7 @@ button {
 }
 .fa-camera {
   position: absolute;
-  scale: 0;
+  opacity: 0;
   transition: cubic-bezier(0.165, 0.84, 0.44, 1) 1s;
 }
 .signin {
@@ -74,7 +76,7 @@ button {
 }
 .signin:hover > .fa-camera {
   transform: translate(-35px, -20px) rotate(340deg);
-  scale: 1;
+  opacity: 1;
 }
 .signin:hover {
   transform: scale(1.1);
@@ -87,14 +89,21 @@ button {
 .fa-gift {
   position: absolute;
   transition: cubic-bezier(0.165, 0.84, 0.44, 1) 1s;
-  scale: 0;
+  opacity: 0;
 }
 .sell:hover > .fa-gift {
   transform: translate(10px, -20px) rotate(45deg);
-  scale: 1;
+  opacity: 1;
 }
 .sell:hover {
   transform: scale(1.1);
+}
+.fa-cart-shopping {
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+  cursor: pointer;
+}
+.fa-cart-shopping:hover {
+  transform: scale(1.2);
 }
 i {
   font-size: 20px;
@@ -115,6 +124,11 @@ i {
   flex-direction: column;
   justify-content: center !important;
   align-items: center;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+}
+.clothes:hover {
+  transform: scale(1.01);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .motto {
   color: white;
@@ -133,6 +147,7 @@ i {
 .find {
   border: 0;
   font-size: large;
+  width: 920px;
 }
 .search-button {
   width: 40px;
@@ -185,6 +200,7 @@ input:focus {
   margin: 5px;
   border-radius: 50px;
   transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+  cursor: pointer;
 }
 .chip:hover {
   transform: scale(1.1);
@@ -202,6 +218,7 @@ input:focus {
   height: 300px;
   border-radius: 20px;
   transition: cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+  cursor: pointer;
 }
 .images:hover {
   transform: scale(1.1);
